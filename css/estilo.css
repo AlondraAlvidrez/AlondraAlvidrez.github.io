@@ -1,0 +1,594 @@
+*{
+    --rosa: #E88895;
+    --negro: #171616;
+    --titulos: 'The Bold Font';
+    font-family: "Poppins";
+}
+@font-face{
+    font-family: 'The Bold Font';
+    src: url("../Fonts/THEBOLDFONT.ttf");
+  }
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgb(252, 235, 239) 0%, #d7cff2 100%);
+    background-color: #f0f0f0;
+}
+h1{
+    font-family: var(--titulos);
+    width: 90%;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+h2, h3{
+    font-family: var(--titulos);
+    margin: 1rem auto;
+}
+h4{
+    font-family: var(--titulos);
+}
+header {
+    background-color: var(--negro);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-family: var(--titulos);
+    font-size: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--negro);
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+
+/* Slider Styles */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 400px; /* Set a fixed height for the slider */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%; /* Ensure the slides take up the full height of the slider */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    height: 100%; /* Ensure each slide takes up the full height of the slider */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the images to fit within the slide */
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+
+/* Links Inicio */
+.icon-links {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.icon-link {
+    flex: 1 1 20%;
+    max-width: 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.icon-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-bg {
+    background-color: var(--rosa);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon-bg i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.icon-link p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 80vw;
+    margin: 1rem auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.image-container {
+    flex: 0 1 30%;
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+    width: 70%;
+    flex-basis: 70%;
+    margin: 0;
+    flex: 0 1 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+
+
+.carousel-container {
+    flex: 0 1 30%;
+    width: 30%;
+    margin: 0;
+    box-sizing: border-box;
+    height: auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    align-content: center;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding transition */
+    width: 100%;
+}
+
+.carousel img {
+    min-width: 100%;
+    height: auto;
+    padding: 0;
+    border-radius: 1rem;
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+#Web .carousel-container{
+    flex: 0 1 33%;
+    
+}
+
+#Web .carousel-container .carousel{
+    height: 300px;
+}
+
+.articulo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 80vw;
+    margin: 1rem auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    align-items: center;
+    align-content: center;
+}
+.CCF{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    max-width: 80vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    align-items: center;
+}
+.Video{
+    align-self: center;
+    width: 50%;
+    height: 30vh;
+    flex-basis: 50%;
+    margin: 0.5rem auto;
+    flex: 0 1 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+}
+
+#Pollito .carousel-container{
+    width: auto;
+    height: 30vh;
+}
+.carousel img {
+    width: 100%;
+    min-width: 100%;
+    object-fit:scale-down;
+}
+
+
+footer {
+    background-color: var(--negro);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+.bttn {
+    background: var(--rosa);
+    color: white;
+    border: solid white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-weight:bold;
+    border-style: solid;
+    padding: 0.5rem 0.5rem;
+    transition: 0.2s ease;
+  }
+  .bttn a{
+    color: white;
+    padding: 1rem 1.5rem;
+    transition: 0.2s ease; 
+  }
+  .bttn a:hover{
+    color: var(--rosa);
+  }
+  .bttn:hover{
+    background: none;
+    border: solid var(--rosa);
+    color: var(--rosa);
+  }
+  
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.footer-logo{
+    margin: auto 0;
+}
+.footer-logo img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.rem;
+    color: var(--rosa);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        padding: 10px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .icon-link {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .image-container, .text-container {
+        flex: 1 1 100%;
+        padding: 5px;
+    }
+    .articulo{
+        align-items: center;
+    }
+    .image-container img {
+        border-radius: 0;
+    }
+    .Video{
+        flex: 1 1 100%;
+        padding: 5px;
+        margin: 1rem 0;
+    }
+    #Animacion iframe{
+        flex: 1 1 100%;
+        padding: 5px;
+        margin: 1rem 0;
+    }
+    .carousel img{
+        border-radius: 0;
+    }
+    .carousel-container {
+        flex: 0 1 100%;
+        width: 100%;
+    }
+    #Web .carousel-container{
+        flex: 0 1 100%;
+        
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .icon-link {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .slider{
+        height: 30vh; 
+    }
+}
