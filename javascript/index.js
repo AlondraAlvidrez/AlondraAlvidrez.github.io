@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slideIndex++;
             showSlide(slideIndex);
             slidesContainer.addEventListener('transitionend', handleTransitionEnd);
-            resetAutoSlide();
+            
         }, 5000); // Change slide every 5 seconds
     };
 
