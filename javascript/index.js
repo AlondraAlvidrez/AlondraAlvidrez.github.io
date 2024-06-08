@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesContainer.style.transition = 'transform 0.5s ease-in-out';
         const offset = -index * 100;
         slidesContainer.style.transform = `translateX(${offset}%)`;
+        console.log(index)
     };
 
     const handleTransitionEnd = () => {
