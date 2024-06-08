@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesContainer.style.transition = 'transform 0.5s ease-in-out';
         const offset = -index * 100;
         slidesContainer.style.transform = `translateX(${offset}%)`;
-        console.log(index)
+        
     };
 
     const handleTransitionEnd = () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesContainer.style.transition = 'none';
             slideIndex = totalSlides - 2; // Move to the last real slide
             slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
-        } else if (slideIndex === totalSlides - 2) {
+        } else if (slideIndex === totalSlides - 2 && slideIndex === totalSlides) {
             slidesContainer.style.transition = 'none';
             slideIndex = 1; // Move to the first real slide
             slidesContainer.style.transform = `translateX(-100%)`;
