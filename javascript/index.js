@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             slidesContainer.style.transition = 'none';
             slideIndex = totalSlides - 2; // Move to the last real slide
             slidesContainer.style.transform = `translateX(-${slideIndex * 100}%)`;
-        } else if (slideIndex === totalSlides - 1) {
+        } else if (slideIndex === totalSlides - 2) {
             slidesContainer.style.transition = 'none';
             slideIndex = 1; // Move to the first real slide
             slidesContainer.style.transform = `translateX(-100%)`;
