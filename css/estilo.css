@@ -1,0 +1,638 @@
+*{
+    --main-color: #e57d8b;
+    --background: rgb(247, 247, 247);
+    --negro: #161616;
+    --accent: #4f246a;
+    --secondary-color:#251231;
+    --titulos: 'The Bold Font';
+    font-family: "Poppins";
+}
+@font-face{
+    font-family: 'The Bold Font';
+    src: url("../Fonts/THEBOLDFONT.ttf");
+  }
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+body {
+    font-family: var(--font-family);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, rgb(249, 246, 247) 0%, #ede9f9 100%);
+    background-color: #f0f0f0;
+}
+
+h1{
+    font-family: var(--titulos);
+    width: 90%;
+    color: var(--main-color);
+    font-size: 2rem;
+    padding: 0;
+    margin: 1rem auto 0;
+    text-align: center;
+}
+h2, h3{
+    color: var(--accent);
+    font-family: var(--titulos);
+    margin: 1rem auto;
+}
+h4{
+    font-family: var(--titulos);
+}
+header {
+    background-color: var(--negro);
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-family: var(--titulos);
+    font-size: 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--negro);
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+
+/*-------- Links Inicio ---------*/
+.icon-links {
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.icon-link {
+    flex: 1 1 20%;
+    max-width: 200px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.icon-link a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-bg {
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.icon-bg i {
+    font-size: 2rem;
+    color: var(--background);
+}
+
+.icon-link p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+
+/* ---------SLIDER SECCIONES ------------*/
+.proyectos{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    align-content: center;
+    overflow: hidden;
+}
+.card-slider{
+    margin: 0;
+    overflow: hidden;
+}
+.card-item .slider-image{
+    width: 100%;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+
+.card-list .card-item{
+    list-style: none;
+}
+.card-list{
+    padding: 0;
+    margin: 0;
+}
+.card-list .card-item .card-link{
+    user-select: none;
+    display: block;
+    background-color: var(--background);
+    padding: 18px;
+    margin: 0;
+    border-radius: 12px;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+.card-list .card-item:hover .card-link{
+    border: 2px var(--accent);
+}
+
+.card-list .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-list .card-link .badge{
+    color: var(--main-color);
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 16px 0 18px;
+    background: #fbe4e4;
+    width: fit-content;
+    border-radius: 50px;
+    
+}
+.card-wrapper{
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: var(--main-color);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+.card-item a{
+    color: var(--secondary-color);
+}
+.card-item a p{
+    font-size:  15px;
+}
+.card-list .card-link .card-button a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.card-list .card-link:hover .card-button {
+    background: var(--main-color);
+    color: #fff;
+}
+.card-wrapper .swiper-pagination-bullet{
+    background: var(--main-color);
+    opacity: 60%;
+    transition: 0.2s ease;
+}
+.card-wrapper .swiper-pagination-bullet-active{
+    background: var(--main-color);
+    opacity: 100%;
+}
+.card-wrapper .swiper-slide-button {
+    color: var(--main-color);
+}
+.swiper-pagination{
+    margin-bottom: 10px;
+}
+
+
+/*----Cajas contenido-------*/
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 80vw;
+    margin: 1rem auto 2rem;
+    background-color: var(--background);
+    border: 1px solid var(--background);
+    border-radius: 1rem;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.08);
+}
+.content-section .card-button{
+    height: 35px;
+    width: 35px;
+    color: var(--main-color);
+    border-radius: 50%;
+    margin: 2px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+.content-section.card-link .card-button a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.content-section a:hover .card-button {
+    background: var(--main-color);
+    color: #fff;
+}
+.content-section a{
+    width: fit-content;
+    align-items: center;
+    align-content: center;
+    text-decoration: none;
+    color: var(--main-color);
+}
+.content-section a p{
+    width: fit-content;
+
+}
+.image-container {
+    flex: 0 1 30%;
+    width: 30%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-container {
+    width: 70%;
+    flex-basis: 70%;
+    margin: 0;
+    flex: 0 1 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-container h2 {
+    margin-top: 0;
+}
+
+/*-----GALLERY-----*/
+.galleryContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: var(--background);
+    border-radius: 1rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+.galleryContainer .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.galleryContainer .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+.galleryContainer .box .dream img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--negro);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+.bttn {
+    background: var(--main-color);
+    color: white;
+    border: solid white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    font-weight:bold;
+    border-style: solid;
+    padding: 0.5rem 0.5rem;
+    transition: 0.2s ease;
+  }
+  .bttn a{
+    color: white;
+    padding: 1rem 1.5rem;
+    transition: 0.2s ease; 
+  }
+  .bttn a:hover{
+    color: var(--main-color);
+  }
+  .bttn:hover{
+    background: none;
+    border: solid var(--main-color);
+    color: var(--main-color);
+  }
+  
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.footer-logo{
+    margin: auto 0;
+}
+.footer-logo img {
+    height: 100px;
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.rem;
+    color: var(--main-color);
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        padding: 10px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 1rem;
+    }
+
+    .icon-link {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+
+    .image-container, .text-container {
+        flex: 1 1 100%;
+        padding: 5px;
+    }
+    
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+    .card-slider .swiper-slide-button{
+        display: none;
+    }
+    .card-item .slider-image{
+        aspect-ratio: 2/1;
+    }
+    .galleryContainer .box{
+        flex-direction: column;
+    }
+    .galleryContainer .box .dream{
+        width: 100%;
+    }
+ 
+}
+
+@media (max-width: 480px) {
+    .icon-link {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .slider{
+        height: 30vh; 
+    }
+}
