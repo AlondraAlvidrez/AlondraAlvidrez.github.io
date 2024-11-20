@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Poppins-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Extras-->
+    <script src="https://kit.fontawesome.com/7f667d685b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!----- Origs ----->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="imgs/logo.svg">
+   
+
+    <title>Portafolio - Alondra Alvídrez</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="imgs/logo-largo.svg" alt="Logo" class="logo">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#DV">Desarrollo Videojuegos</a></li>
+                    <li><a href="#A">Animación y Motion Graphics</a></li>
+                    <li><a href="#D">Diseño Gráfico</a></li>
+                    <li><a href="#UX">UX</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-------SLIDER IMGS------->
+        <div class="contenedor swiper">
+            <div class="card-slider">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
+                        <img src="imgs/slider1.png" alt="ChickenDox" class="slider-image">
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <img src="imgs/slider2.png" alt="ChickenDox" class="slider-image">
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <img src="imgs/slider3.png" alt="ChickenDox" class="slider-image">
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+
+
+        <!--------LINKS REDES------>
+        <section class="icon-links">
+            <div class="icon-link">
+                <a href="https://www.linkedin.com/in/alondra-jocelyn-alv%C3%ADdrez-hern%C3%A1ndez-628148277/?originalSubdomain=mx">
+                    <div class="icon-bg">
+                        <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                </a>
+            </div>
+            <div class="icon-link">
+                <a href="https://www.behance.net/alondralvidrez">
+                    <div class="icon-bg">
+                        <i class="fa-brands fa-behance fa-lg"></i>
+                    </div>
+                    <h3>Behance</h3>
+                </a>
+            </div>
+            <div class="icon-link">
+                <a href="mailto: alvidrez.alondra@gmail.com">
+                    <div class="icon-bg">
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                    </div>
+                    <h3>E-mail</h3>
+                </a>
+            </div>
+        </section>
+
+        <!------INTRODUCCION PERSONAL------>
+        <section class="content-section">
+            <div class="image-container">
+                <img src="imgs/Persona.svg" alt="Descriptive Image">
+            </div>
+            <div class="text-container">
+                <h2>Hola, soy Alondra Alvídrez</h2>
+                <p>Soy diseñadora digital, tengo 22 años y me ubico en Cd. Juárez, Chihuahua.</p>
+                <p>Mis aptitudes son el diseño web, animación 2D y 3D, programación, ilustración y diseño de personajes. Cuento con un nivel avanzado de inglés, tanto conversacional como escrito.</p>
+                <p>Mis habilidades incluyen:</p>
+                <ul>
+                    <li>Adobe Suite</li>
+                    <li>C#</li>
+                    <li>HTML5, CSS</li>
+                    <li>JavaScript</li>
+                    <li>Resolume Arena</li>
+                    <li>Blender</li>
+                    <li>Maya</li>
+                </ul>
+                <a  target=”_blank” href="CV-2024.pdf" download ><p>CV <button class="card-button material-symbols-outlined">
+                    arrow_forward
+                </button></p></a>
+            </div>
+        </section>
+
+        <!------PROYECTOS-------->
+        <section id="proyectos">
+
+            <!------JUEGOS----->
+            <h1 id="DV">Desarrollo Videojuegos</h1>
+            <div class="contenedor swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.behance.net/gallery/144730015/The-Oak-Groves-Journey-%28Diseno-de-videojuego%29" target=”_blank” class="card-link">
+                                <img src="imgs/OGJ1.png" alt="Oak Groove's Journey" class="card-image">
+                                <p class="badge game">Game Development</p>
+                                <h2 class="CardTitle">Oak's Groove Journey</h2>
+                                <p>Creación de diseño de personajes, pantallas y animaciones para el concepto de un videojuego para celular.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="chickenDox.html" class="card-link">
+                                <img src="imgs/portadaPollitos.png" alt="ChickenDox" class="card-image">
+                                <p class="badge game">Game Development</p>
+                                <h2 class="CardTitle">Chicken Dox</h2>
+                                <p>Involucrada en el desarrollo, programación y diseño para el videojuego ganador del primer lugar del Hackaton de DDMI 2024.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="theDarkCure.html" class="card-link">
+                                <img src="imgs/portadaDarkCure.png" alt="TheDarkCure" class="card-image">
+                                <p class="badge game">Game Development</p>
+                                <h2 class="CardTitle">The Dark Cure</h2>
+                                <p>Involucrada en el desarrollo, programación y diseño para un videojuego de horror de computadora.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+            <!-------ANIMACION-------->
+            <h1 id="A">Animación y Motion Graphics</h1>
+            <div class="contenedor swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="diaMuertos.html" class="card-link">
+                                <img src="imgs/DiaDeMuertos3.png" alt="Día de Muertos" class="card-image">
+                                <p class="badge animation">Animación</p>
+                                <h2 class="CardTitle">Viaje al Mictlán</h2>
+                                <p>Elaboración del primer nivel y créditos de la animación para la sala inmersiva del Centro Cultural de las Fronteras.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="doDePecho.html" class="card-link">
+                                <img src="imgs/JuanGa.png" alt="Do de Pecho - Juan Gabriel" class="card-image">
+                                <p class="badge animation">Animación</p>
+                                <h2 class="CardTitle">Do de Pecho</h2>
+                                <p>Desarrollo 3D para proyecto en honor a Juan Gabriel. Presentada en la sala inmersiva del CCF y adaptada a exposición en ICSA.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.behance.net/gallery/205321215/Raincoat-Animation-Project" target=”_blank” class="card-link">
+                                <img src="imgs/Raincoat.png" alt="Raincoat" class="card-image">
+                                <p class="badge animation">Animación</p>
+                                <h2 class="CardTitle">Raincoat</h2>
+                                <p>Proyecto de animación 2D. Proceso desde conceptualización, diseño de personajes, storyboard hasta vectores y animación.</p>
+                                
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://youtu.be/8agYKaXJK4c"  target=”_blank” class="card-link">
+                                <img src="imgs/demoReel.png" alt="Anime OST" class="card-image">
+                                <p class="badge">Animación</p>
+                                <h2 class="CardTitle">Deemo Reel 3D</h2>
+                                <p>Demo Reel de animaciones realizadas en Maya. Incluye los principios de la animación, walk cycle y carga de peso.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        
+                      
+                        <li class="card-item swiper-slide">
+                            <a href="galeriaMotion.html" class="card-link">
+                                <img src="imgs/MotionGraphs.gif" alt="Ejemplos Motion Graphics" class="card-image">
+                                <p class="badge animation">Animación</p>
+                                <h2 class="CardTitle">Motion Graphics</h2>
+                                <p>Galería de diversas animaciones motion graphics. Realizadas con Illustrator y After Effects.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!------DISENO------>
+            <h1 id="D">Diseño</h1>
+            <div class="contenedor swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.behance.net/gallery/120387207/Proyecto-Final-Sitio-web" target=”_blank” class="card-link">
+                                <img src="imgs/gudetama.png" alt="E-Shop" class="card-image">
+                                <p class="badge design">Diseño Gráfico</p>
+                                <h2 class="CardTitle">Diseño E-Shop</h2>
+                                <p>Diseño de tienda virtual en Photoshop. Desde wireframes hasta vistas de alta fidelidad y mockups.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        
+                        <li class="card-item swiper-slide">
+                            <a href="galeriaDis.html" class="card-link">
+                                <img src="imgs/Design2.png" alt="Ejemplos Diseño Gráfico" class="card-image">
+                                <p class="badge design">Diseño Gráfico</p>
+                                <h2 class="CardTitle">Diseño Gráfico</h2>
+                                <p>Galería de diversos diseños. Mayormente posts realizados como parte del equipo de Zona Cero el verano del 2024.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="https://www.behance.net/gallery/159150833/Coraline-Poster" target=”_blank” class="card-link">
+                                <img src="imgs/Coraline.png" alt="Poster Coraline" class="card-image">
+                                <p class="badge design">Diseño Gráfico</p>
+                                <h2 class="CardTitle">Diseño Poster</h2>
+                                <p>Diseño de poster en Photoshop. Desde conceptualización, bocetos, edición y mockups.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="convocatorias.html" class="card-link">
+                                <img src="imgs/Convocatoria.png" alt="Convocatorias" class="card-image">
+                                <p class="badge design">Diseño Gráfico</p>
+                                <h2 class="CardTitle">Diseño Convocatorias</h2>
+                                <p>Diseño de convocatorias para Internacionalización UACJ y sus respectivos flyers. Hechos en Illustrator para impresión.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+            <!------ UX ------->
+            <h1 id="UX">UX</h1>
+            <div class="contenedor swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="miauCafe.html" class="card-link">
+                                <img src="imgs/MiauCafe.png" alt="Miau Café" class="card-image">
+                                <p class="badge web">Diseño Web</p>
+                                <h2 class="CardTitle">Miau Café</h2>
+                                <p>Involucrada en el diseño de pantallas de alta fidelidad, creación de HTML y JS, y creación y manejo de base de datos PHP.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="eazyCook.html" class="card-link">
+                                <img src="imgs/EazyCook.png" alt="EazyCook" class="card-image">
+                                <p class="badge cell">Diseño Móvil</p>
+                                <h2 class="CardTitle">EazyCook</h2>
+                                <p>Aplicación para IOS hecha en Swift. Involucrada en el diseño de pantallas y programación del conversor de unidades.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="acarpi.html" class="card-link">
+                                <img src="imgs/Acarpi.png" alt="ChickenDox" class="card-image">
+                                <p class="badge cell">Diseño Móvil</p>
+                                <h2 class="CardTitle">Acarpi</h2>
+                                <p>Prototipo de aplicación ganador del 3er lugar del Hackaton DDMI 2021. Involucrada en identidad gráfica y sección de temporizador.</p>
+                                <button class="card-button material-symbols-outlined">
+                                    arrow_forward
+                                </button>
+                                
+                            </a>
+                        </li>
+                       
+                        
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-container">
+           
+            <div class="footer-links">
+                
+                <div class="footer-section">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="#DV">Desarrollo Videojuegos</a></li>
+                        <li><a href="#A">Animación y Motion Graphics</a></li>
+                        <li><a href="#D">Diseño Gráfico</a></li>
+                        <li><a href="#UX">UX</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/alondra-jocelyn-alv%C3%ADdrez-hern%C3%A1ndez-628148277/?originalSubdomain=mx"><i class="fa-brands fa-linkedin-in fa-lg"></i>   Linkedin</a></li>
+                        <li><a href="https://www.behance.net/alondralvidrez"><i class="fa-brands fa-behance fa-lg"></i>   Behance</a></li>
+                        <li><a type="email"><i class="fa-solid fa-envelope fa-lg"></i>   alvidrez.alondra@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-logo">
+                    <img src="imgs/logo.svg" alt="Footer Logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="javascript/swiper.js"></script>
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
